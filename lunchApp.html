@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sidera's LunchApp</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Arapey" rel="stylesheet">
+</head>
+
+<body>
+	<div id="everythingContainer">
+	<header>
+		<h1 id="TitleText"><a href="lunchApp.html">Sidera's LunchApp!</a></h1>
+		<div id="help"><h2>?</h2></div>
+	</header>
+	<div id="helpText">
+			<h1>Drag the foods you want into the lunchbox tray.</h1>
+			<h1>Click the title to start over.</h1>
+			<h1>Remember: Only one big item and only one treat!</h1> 
+		</div>
+	<div class="mainContainer">
+		<div class="leftContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img id="bento" src="images/bento-images/bento.png">
+			<img id="bentoClosed" src="images/bento-images/bentoClosed.png">
+			<div id="lunch">
+			</div>
+			<ul id="lunchList">
+			</ul>
+		</div>
+		<div class="rightContainer">
+			<div class="row">
+				<div class="column col-2"><img id="Apple-cheddar%20wrap" class="food big cheese" src="images/apple%20and%20cheddar%20wrap.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Applesauce" class="food med" src="images/applesauce.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Apple%20slices" class="food med" src="images/apple%20slices.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="Bagel" class="food big" src="images/bagel.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Broccoli" class="food med" src="images/broccoli.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Burrito" class="food big" src="images/burrito.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-8"><img id="Candy" class="food small" src="images/candy.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-9"><img id="Carrots" class="food med" src="images/carrots.png" draggable="true" ondragstart="drag(event)"></div>
+			</div> 
+			<div class="row">
+				<div class="column col-2"><img id="Cheese%20and%20crackers" class="food med cheese" src="images/cheese%20and%20crackers.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Cheese%20bar" class="food med cheese" src="images/cheese%20bar.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Cheese%20sandwich" class="food big cheese" src="images/cheese%20sandwich.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="Cheezy%20squares" class="food med" src="images/cheez-its.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Chocolate%20chips" class="food small junk" src="images/chocolate%20chips.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Clementine" class="food med" src="images/clementine.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-8"><img id="Couscous" class="food med" src="images/couscous.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-9"><img id="Crackers" class="food med" src="images/crackers.png" draggable="true" ondragstart="drag(event)"></div>
+			</div> 
+			<div class="row">
+				<div class="column col-2"><img id="Dried%20fruit" class="food small" src="images/dried%20fruit.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Edamame" class="food med" src="images/edamame.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Egg" class="food big" src="images/egg.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="English%20muffin%20pizza" class="food big cheese" src="images/english%20muffin%20pizza.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Granola" class="food med" src="images/granola.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Grapes" class="food med" src="images/grapes.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-8"><img id="Hummus%20and%20cracker" class="food big" src="images/hummus%20and%20cracker.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-9"><img id="Hummus%20and%20pita" class="food big" src="images/hummus%20and%20pita.png" draggable="true" ondragstart="drag(event)"></div>
+			</div> 
+			<div class="row">
+				<div class="column col-2"><img id="Meatballs" class="food big" src="images/meatballs.gif" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Muffins" class="food big" src="images/muffins.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Pancake%20sandwich" class="food big" src="images/pancake%20sandwich.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="Parmesan%20zucchini%20waffles" class="food big" src="images/parmesan%20zucchini%20waffles.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Pasta" class="food big" src="images/pasta.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Pigs%20in%20a%20blanket" class="food big" src="images/pigs%20in%20a%20blanket.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-8"><img id="Pizza" class="food big" src="images/pizza.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-9"><img id="Popcorn" class="food med" src="images/popcorn.png" draggable="true" ondragstart="drag(event)"></div>
+			</div>
+			<div class="row">
+				<div class="column col-2"><img id="Quiche" class="food big" src="images/quiche.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Sausage" class="food med" src="images/sausage.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Seaweed" class="food med" src="images/seaweed.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="Strawberries" class="food med" src="images/strawberries.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Tomatoes" class="food med" src="images/tomatoes.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Tortila%20roll-up" class="food big" src="images/tortilla%20roll-up.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-8"><img id="Tuna" class="food med" src="images/tuna.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-9"><img id="Tuna%20sandwich" class="food big" src="images/tuna%20sandwich.png" draggable="true" ondragstart="drag(event)"></div>
+			</div>  
+			<div class="row">
+				<div class="column col-2"><img id="Turkey%20rollup" class="food med" src="images/turkey%20rollup.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-3"><img id="Turkey%20sandwich" class="food big" src="images/turkey%20sandwich.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-4"><img id="Waffle" class="food big" src="images/waffle.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-5"><img id="Yogurt" class="food med" src="images/yogurt.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-6"><img id="Yogurt%20and%20granola" class="food big" src="images/yogurt%20and%20granola.png" draggable="true" ondragstart="drag(event)"></div>
+				<div class="column col-7"><img id="Yogurt%20raisins" class="food small" src="images/yogurt%20raisins.png" draggable="true" ondragstart="drag(event)"></div>
+			</div>
+		</div>
+		
+		<!--<footer>
+			<p>Drag foods into the lunchbox. Click the title to start over. Remember: Only one big item, and only one treat!</p>
+		</footer>-->
+	</div>
+	</div>s
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>		  
+	<script type="text/javascript" src="lunchApp.js"></script>   
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+    color: rgb(120, 8, 125);
+    transition: 0.1s;
+}
+a:hover {
+    color: rgba(120, 8, 125, 0.35);
+}
+a:active {
+    color: rgba(120, 8, 125, 0.2);
+}
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.choosable {
+    opacity: 1;
+}
+.chosen {
+    opacity: 0.01;
+}
+.mainContainer {
+	width: 100%;
+	padding: 0px;
+	background-color: white;
+	overflow: hidden;
+}
+.leftContainer {
+	width: 39%;
+	float: left;
+	padding: 25px;
+	padding-top: 40px;
+	background-color: white;
+	text-align: center;
+}
+.rightContainer {
+	width: 61%;
+	float: left;
+	padding-top: 18px;
+    padding-right: 30px;
+	background-color: white;
+}
+[class*="col-"] {
+    float: left;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 0px;
+    height: 90px;
+    width: 12.5%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+header {
+  /*  background: -webkit-linear-gradient(-90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+  /*	background: -o-linear-gradient(-90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+  /*	background: -moz-linear-gradient(-90deg, red, yellow); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(-45deg, rgba(198, 89, 210, 0.6), rgba(231, 172, 233, 0.2)); /* Standard syntax */ 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8%;
+    text-align: left;
+}
+header h1 {
+	font-family: 'Fredericka The Great', serif;
+	font-weight: normal;
+	font-size: 36px;
+	display: inline;
+}
+header h2 {
+    font-family: 'Fredericka The Great', serif;
+    font-weight: normal;
+    font-size: 25px;
+    display: inline;    
+}
+#help {
+    display: inline;
+    float: right;
+    padding: 10px;
+    background-color: rgba(120, 8, 125, 0.75);
+    color: white;
+    border-radius: 5px 5px 20px 20px;
+    padding-top: 16px;
+    margin-right: 7%;
+    margin-top: -25px;
+    width: 45px;
+    text-align: center;
+    transition: 0.1s;
+}
+#help:hover {
+    margin-top: -20px;
+}
+#helpText {
+    position: absolute;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 25%;
+    padding: 40px 80px 40px 80px;
+    background: rgba(128, 225, 144, 1);
+    color: white;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Arapey', serif;
+    font-size: 1.1em;
+    display: none;
+    opacity: 1;
+    z-index: 10;
+}       
+
+img, .food {
+	border-radius: 20px;
+    width:90%;
+    max-height: 90px;
+    margin: 5px;
+    vertical-align: middle;
+    transition: 0.19s;
+}
+.food:hover {
+    transform: scale(1.4);
+}
+#bento {
+	width: 90%;
+    max-width: 300px;
+	max-height: 250px;
+	margin-bottom: 30px;
+}
+#bentoClosed {
+/*    position: absolute;
+    left: 110px; */
+    width: 90%;
+    max-width: 300px;
+    max-height: 250px;
+    margin-bottom: 30px;
+    opacity: 1;               /* starting at 0.1, but it should end at 0.75 */
+    display: none;
+}
+.visible {
+    display: inline;
+}
+.invisible {
+}
+#lunch {
+	border-top: 2px rgba(120, 8, 125, 0.5) dotted;
+    /*border-bottom: 2px rgba(138, 11, 154, 0.25) dotted;*/
+	text-align: center;
+	padding-top: 20px;
+	width: 100%;
+    height: 135px;
+}
+#lunchList {
+    list-style-type: none;
+    text-align: center;
+    color: rgb(120, 8, 125);
+    font-family: "Arapey", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-left: -33px;
+    margin-bottom: 0;    
+}
+#lunchList > li {
+    opacity: 0.1;
+}
